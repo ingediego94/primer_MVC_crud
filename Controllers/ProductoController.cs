@@ -61,17 +61,34 @@ public class ProductoController : Controller
         return RedirectToAction("Index");
     }
     
-    
-    // TODO
-    // UPDATE:
-    public IActionResult Updating(int id_prod)
+
+    // GET: Producto/Edit/1
+    public IActionResult Edit(int id)
     {
-        contador++;
-        producto.ID = contador;
-        _productos.Add(producto);
+        var producto = _productos.FirstOrDefault(p => p.ID == id);
+        if (producto == null)
+        {
+            return NotFound();
+        }
+        return View(producto);
+    }
+
+    [HttpPost]
+    public IActionResult EditPost(Producto producto)
+    {
+        var existingProduct = _productos.FirstOrDefault(p => p.ID == producto.ID);
+        if (existingProduct == null)
+        {
+            return NotFound();
+        }
+
+        // Actualizar propiedades
+        existingProduct.Nombre = producto.Nombre;
+        existingProduct.Descripcion = producto.Descripcion;
+        existingProduct.Precio = producto.Precio;
+
         return RedirectToAction("Index");
     }
 
-    
 }
 

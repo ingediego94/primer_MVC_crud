@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/diego/Documents/diego_dev/inicio_Mvc_Csharp/inicio_Mvc_Csharp.csproj": {}
+    "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj": {}
   },
   "projects": {
-    "/home/diego/Documents/diego_dev/inicio_Mvc_Csharp/inicio_Mvc_Csharp.csproj": {
+    "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/diego/Documents/diego_dev/inicio_Mvc_Csharp/inicio_Mvc_Csharp.csproj",
+        "projectUniqueName": "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj",
         "projectName": "inicio_Mvc_Csharp",
-        "projectPath": "/home/diego/Documents/diego_dev/inicio_Mvc_Csharp/inicio_Mvc_Csharp.csproj",
-        "packagesPath": "/home/diego/.nuget/packages/",
-        "outputPath": "/home/diego/Documents/diego_dev/inicio_Mvc_Csharp/obj/",
+        "projectPath": "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj",
+        "packagesPath": "/home/diego_dev/.nuget/packages/",
+        "outputPath": "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/diego/.nuget/NuGet/NuGet.Config"
+          "/home/diego_dev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -56,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
