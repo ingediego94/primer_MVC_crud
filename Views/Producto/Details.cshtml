@@ -1,0 +1,24 @@
+@model inicio_Mvc_Csharp.Models.Producto
+
+<h1>Funciona</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Precio</td>
+            <td>Descripcion</td>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <td>@Model.ID</td>
+        <td>@Model.Nombre</td>
+        <td>@Model.Precio</td>
+        <td>@Model.Descripcion</td>
+        <td>
+            <a class="btn btn-primary" asp-action="Index" asp-controller="Producto">Volver</a>
+        </td>
+    </tbody>
+</table>
