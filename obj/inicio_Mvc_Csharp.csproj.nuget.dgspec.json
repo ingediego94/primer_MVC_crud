@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj": {}
+    "F:\\Programacion\\RIWI\\primer_MVC_crud\\inicio_Mvc_Csharp.csproj": {}
   },
   "projects": {
-    "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj": {
+    "F:\\Programacion\\RIWI\\primer_MVC_crud\\inicio_Mvc_Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj",
+        "projectUniqueName": "F:\\Programacion\\RIWI\\primer_MVC_crud\\inicio_Mvc_Csharp.csproj",
         "projectName": "inicio_Mvc_Csharp",
-        "projectPath": "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/inicio_Mvc_Csharp.csproj",
-        "packagesPath": "/home/diego_dev/.nuget/packages/",
-        "outputPath": "/home/diego_dev/Documents/diego_dev/primer_MVC_crud/obj/",
+        "projectPath": "F:\\Programacion\\RIWI\\primer_MVC_crud\\inicio_Mvc_Csharp.csproj",
+        "packagesPath": "C:\\Users\\57350\\.nuget\\packages\\",
+        "outputPath": "F:\\Programacion\\RIWI\\primer_MVC_crud\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/diego_dev/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\57350\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

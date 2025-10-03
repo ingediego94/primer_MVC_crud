@@ -7,7 +7,7 @@ public class ProductoController : Controller
 {
 
     // Creo una lista de productos (quemada):
-    private static List<Producto> _productos = new List<Producto>
+    public static List<Producto> _productos = new List<Producto>
     {
         new Producto { ID = 1, Nombre = "Televisor", Precio = 5020232, Descripcion = "Es muy bueno" },
         new Producto { ID = 2, Nombre = "Pc gamer", Precio = 67564343, Descripcion = "Regular" },
@@ -62,6 +62,7 @@ public class ProductoController : Controller
     }
     
 
+    // EDITAR:  
     // GET: Producto/Edit/1
     public IActionResult Edit(int id)
     {

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<inicio_Mvc_Csharp.Models.Cliente>
+
+<h1>Lista de clientes</h1>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="Store">
+                    <h5>Crear un nuevo cliente</h5>
+                    <div class="mt-3 d-flex flex-column">
+                        <label for="nombre_c">Nombre</label>
+                        <input id="nombre_c" type="text" class="form-control" name="nombre_c" required autofocus>
+                    </div>
+
+                    <div class="mt-3 d-flex flex-column">
+                        <label for="cedula">Cédula</label>
+                        <input id="cedula" type="number" class="form-control" name="cedula" placeholder="1010101010" required>
+                    </div>
+                    @* TODO *@
+                    <div class="mt-3 d-flex flex-column">
+                        <label for="producto">Producto</label>
+                        <select id="producto" class="form-control" name="ProductoId" required>
+                            <option value="">-- Selecciona un producto --</option>
+                            @foreach (var p in ViewBag.Productos as List<inicio_Mvc_Csharp.Models.Producto>)
+                            {
+                                <option value="@p.ID">@p.Nombre</option>
+                            }
+                        </select>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-success w-100">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-9">
+        <table class="table table-striped">
+            <!--Encabezados-->
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nombre</td>
+                    <td>Cédula</td>
+                    <td>Edad</td>
+                    <td>Producto</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+    
+            <!--Cuerpo de la tabla-->
+            <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Nombre</td>
+                    <td>@c.Cedula</td>
+                    <td>@c.Edad</td>
+                    <td>@c.Producto?.Nombre</td>
+                    <td>
+                        @* <a class="btn btn-primary" asp-action="Details" asp-controller="Producto" asp-route-id="@c.Id">Detalles</a> *@
+                        <a class="btn btn-warning" asp-action="EditCliente" asp-controller="Cliente" asp-route-id="@c.Id">Editar</a>
+                        <a class="btn btn-danger" asp-action="DeleteCliente" onclick="return confirm('¿Quiere eliminar este cliente?');" asp-controller="Cliente" asp-route-id_cliente="@c.Id" >Delete</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+    
+        </table>
+    </div>
+</div>

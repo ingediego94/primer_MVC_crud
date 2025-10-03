@@ -10,18 +10,18 @@
                 <form asp-action="Store">
                     <h5>Crear un nuevo producto</h5>
                     <div class="mt-3 d-flex flex-column">
-                        <label for="">Nombre</label>
-                        <input type="text" class="form-control" name="Nombre">
+                        <label for="nombre_p">Nombre</label>
+                        <input id="nombre_p" type="text" class="form-control" name="nombre_p" required >
                     </div>
 
                     <div class="mt-3 d-flex flex-column">
-                        <label for="">Descripcion</label>
-                        <input type="text" class="form-control" name="Descripcion">
+                        <label for="descripcion">Descripcion</label>
+                        <input id="descripcion" type="text" class="form-control" name="Descripcion" placeholder="Descripcion del producto" required>
                     </div>
 
                     <div class="mt-3 d-flex flex-column">
-                        <label for="">Precio</label>
-                        <input type="text" class="flex-column" name="Precio">
+                        <label for="precio">Precio</label>
+                        <input id="precio" type="number" class="form-control" name="precio" required>
                     </div>
                     <hr>
                     <button type="submit" class="btn btn-success w-100">Guardar información</button>

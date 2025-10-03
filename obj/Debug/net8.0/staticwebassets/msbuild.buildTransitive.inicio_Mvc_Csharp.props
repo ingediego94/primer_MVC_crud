@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/inicio_Mvc_Csharp.props" />
+  <Import Project="..\buildMultiTargeting\inicio_Mvc_Csharp.props" />
 </Project>
